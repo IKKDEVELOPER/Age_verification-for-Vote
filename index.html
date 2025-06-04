@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Age Verification</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0d0d0d;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 10%;
+      font-size: 2rem;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 3%;
+    }
+
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .yes {
+      background: #00ff88;
+      color: #000;
+    }
+
+    .yes:hover {
+      background: #00cc6e;
+      box-shadow: #00cc6e 0px 0px 15px;
+    }
+
+    .no {
+      background: #ff4d4d;
+      color: #000;
+    }
+
+    .no:hover {
+      background: #e60000;
+      box-shadow: red 0px 0px 15px;
+    }
+
+    h3{
+        margin-left: 47%;
+        font-size: 18px;
+    }
+    h4{
+        margin-left: 45%;
+        font-size: 17px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hi, I am Age Verification</h1>
+    <h3>For Voting</h3>
+    <h4>Your Age Above 18?</h4>
+  <div class="btn-container">
+    <button class="yes" onclick="checkAge('yes')">Yes</button>
+    <button class="no" onclick="checkAge('no')">No</button>
+  </div>
+
+  <script>
+    function checkAge(answer) {
+      if (answer === 'yes') {
+         alert("Welcome! Sir ");
+      } else {
+        alert("Sorry You are not 18+ You cant Vote.");
+        setTimeout(function() {
+            var userInput = prompt("Pls Enter Your Name");
+            alert(userInput + "" + " Beta Masti nhi masti nhi " );
+            window.location.href = "https://www.youtube.com/channel/UCZn3GJRxcgrPuHlxSbK00dA"; 
+        })
+        window.history.back();
+      }
+    }
+  </script>
+
+</body>
+</html>
